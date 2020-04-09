@@ -1,3 +1,4 @@
+<!-- *6 創html -->
 <!--載入Bootstrap-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -13,7 +14,7 @@
         alert("OK");
     }
     function test3(){
-        broyo.callFromJS(urname.value);     //在7時已經被介紹認識了broyo這個隱含物件,此處直接叫
+        broyo.callFromJS(urname.value);     //*13    在*12時已經被介紹認識了broyo這個隱含物件,此處直接叫
     }
 </script>
 <a href="map.html">MAP</a>
@@ -25,13 +26,14 @@
 <div id="here"> wowwowwow</div>
 <hr>
 
-<!-- Button trigger modal -->
-Launch demo modal
 <Button type="button" onclick="test2()" class="btn btn-warning"  data-toggle="modal" data-target="#exampleModal">Modal</Button>
 <hr>
 
 <input type="text" id="urname" />
 <Button type="button" onclick="test3()" class="btn btn-info">Android</Button>
+
+
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

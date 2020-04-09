@@ -1,3 +1,6 @@
+<!-- *18 新增此地圖
+ https://developers.google.com/maps/documentation/javascript/tutorial
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +22,7 @@
     </style>
 </head>
 <body>
-<input type="button" value="GoGo" onclick="moveTo(24.151176, 120.651322)">
+<input type="button" value="GoGo" onclick="moveTo(24.151176, 120.651322)">      <!-- *20 一顆按鈕 順便傳入在google map查到的參數  -->
 <hr>
 <div id="map"></div>
 <script>
@@ -34,8 +37,8 @@
       function moveTo(newlat, newlng){
         var newpos = {lat: newlat, lng: newlng};
         map.setCenter(newpos);
-        map.setZoom(17);
-        var marker = new google.maps.Marker({position: newpos, map: map});   //https://developers.google.com/maps/documentation/javascript/reference/marker ; 冒號前是key,後是value
+        map.setZoom(17);                                    //*19 新增function moveTo直到這行  https://developers.google.com/maps/documentation/javascript/reference/marker ; 冒號前是key,後是value
+        var marker = new google.maps.Marker({position: newpos, map: map});   //*33 加上marker 建構時順便帶參數,第一個map是屬性名稱,第二個是物件也就是30行的map  https://developers.google.com/maps/documentation/javascript/reference/marker
       }
     </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLk8W31pUZyUEwd2z6Wzld99iipFvo85Y&callback=initMap"
